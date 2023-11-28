@@ -1,0 +1,43 @@
+body {
+    background-color: steelblue;
+}
+
+textarea, .desplaza{
+    background-color: beige;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.desplaza{
+    border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    
+    textarea{
+        width: 100%;
+        height: 100%;
+    }    
+  }
+
+@media (max-width: 768px) {
+   
+h1 {
+    font-size: 30px;
+}
+    textarea{        
+        width: 30rem;
+        height: 10rem;
+        margin: auto 0;
+    }   
+
+    .desplaza {
+      margin-top: 5%;
+      height: 300px; /* Altura del contenedor */
+      overflow-y: scroll; /* Mostrar la barra de desplazamiento vertical */
+    }
+  }
